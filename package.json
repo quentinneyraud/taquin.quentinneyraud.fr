@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
+    "prebuild": "rm -rf ./dist",
     "build": "parcel build src/index.html",
-    "open": "npm run build && static-server ./dist -o"
+    "open": "npm run build && static-server ./dist -o",
+    "deploy": "npm run build && cp ./now.json ./dist && now ./dist && cd ./dist && now alias"
   },
   "keywords": [],
   "author": "",
