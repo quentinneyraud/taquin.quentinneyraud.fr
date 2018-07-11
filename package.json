@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "open": "npm run build && static-server ./dist -o"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.9.4"
-  }
+    "parcel-bundler": "^1.9.4",
+    "static-server": "^2.2.1"
+  },
+  "dependencies": {}
 }
