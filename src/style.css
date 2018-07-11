@@ -48,7 +48,7 @@ h1 {
     border-left: none;
 }
 
-a {
+p a {
     padding: 5px;
     background-color: #000;
     color: #fff;
@@ -70,4 +70,15 @@ body {
 
 .red {
     color: red;
+}
+
+#github-link {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+#github-link svg {
+    width: 32px;
+    height: 32px;
 }
