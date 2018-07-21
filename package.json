@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
     "prebuild": "rm -rf ./dist",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --no-source-maps",
     "open": "npm run build && static-server ./dist -o",
     "deploy": "npm run build && cp ./now.json ./dist && now ./dist && cd ./dist && now alias"
   },
